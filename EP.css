@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 253, 213, 0.5);
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0766cb;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #0766cb;
+    display: flex;
+    align-items: center;
+}
+
+header .logo span {
+    font-family: "Yuji Mai", serif;
+    color: #023d2c;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    padding: 10px;
+    color: #0766cb;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #045e44;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    header .logo {
+        font-size: 14px;
+    }
+
+    header .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.hero {
+    background-image: url('Images/pakistan-nature-zqwp9ulls7lp5wle.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hero button:hover {
+    background-color: #f57c00;
+}
+
+.capsule{
+    background-color: white;
+    width: 1445px;
+    margin-left: 230px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.destinations-2 {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations-2 h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-right: 72%;
+    color: rgb(26, 27, 124);
+}
+
+.destinations-4 {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card-2 {
+    margin-top: -2%;
+    background-image: url(Images/high-resolution-green-background-1ajizc6xqm6rvmxy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 1170px;
+    height: 535px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vid video{
+    width: 83%;
+    border-radius: 10px;
+}
+
+.card-2:hover{
+    cursor: pointer;
+}
+
+.card-2 h3 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+  font-style: normal;
+    font-size: 2rem;
+    margin-top: 440px;
+    color: #f4f4f4;
+}
+
+.card-2 button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 37%;
+    margin-left: 43%;
+}
+
+.card-2 button:hover{
+    background-color: #f57c00;
+}
+
+.large-cards-1 {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll; /*horizontal scroll*/
+}
+
+.large-cards-1::-webkit-scrollbar{
+    display: none;
+}
+
+.large-img {
+    border-radius: 10px;
+    width: 380px;
+    height: 600px;
+    text-align: center;
+    flex: none; /*horizontal scroll*/
+    filter: grayscale(25%);
+}
+
+.large-img:hover{
+    filter: grayscale(0%);
+}
+
+.large-img img {
+    width: 100%;
+    height: 99%;
+    border-radius: 20px;
+}
+
+.wrap{ /*horizontal scroll */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backBtn, #nextBtn{ /*horizontal scroll */
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+  }
+  
+  .footer-heading {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ddd;
+  }
+  
+  .footer-links,
+  .footer-social-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li,
+  .footer-social-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a,
+  .footer-social-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover,
+  .footer-social-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #fff;
+  }
+  
